@@ -29,7 +29,9 @@ $ cat /tmp/new-key | base64 -w0            # Linux
 $ cat /tmp/new-key | base64 | tr -d '\n'   # OSX
 ```
 
-Pass the output of this command to the `GIT_DEPLOY_KEY` variable, using the `-e` option of `docker run. See `run.sh` for an example.
+Pass the output of this command to the `GIT_DEPLOY_KEY` variable, using the `-e` option of `docker run`. See `run.sh` for an example.
+
+Add `/tmp/new-key.pub` as a deployment key to your repository.
 
 ### Create a basic auth config (Optional)
 
